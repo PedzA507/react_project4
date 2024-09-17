@@ -81,7 +81,7 @@ export default function SignInUser() {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              backgroundColor: 'rgba(255, 255, 255, 0.9)', // พื้นหลังโปร่งใส
+              backgroundColor: 'rgba(255, 255, 255, 0.9)', 
               padding: '40px',
               borderRadius: '15px',
               boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)',

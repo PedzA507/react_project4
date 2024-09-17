@@ -4,8 +4,8 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import BackgroundImage from './assets/BG.png'; // นำเข้าภาพพื้นหลัง
-import { Link } from 'react-router-dom'; // เพิ่มการนำเข้า Link
+import BackgroundImage from './assets/BG.png'; 
+import { Link } from 'react-router-dom';
 
 function Copyright(props) {
   return (
@@ -28,7 +28,7 @@ export default function Cusview() {
       <Box
         sx={{
           minHeight: '100vh',
-          backgroundImage: `url(${BackgroundImage})`, // ใช้ภาพพื้นหลัง
+          backgroundImage: `url(${BackgroundImage})`, 
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           display: 'flex',
@@ -37,7 +37,7 @@ export default function Cusview() {
           padding: 2,
         }}
       >
-        <Container component="main" maxWidth="md"> {/* ปรับขนาดกรอบให้ใหญ่ขึ้น */}
+        <Container component="main" maxWidth="md"> {}
           <CssBaseline />
           <Box
             sx={{
@@ -45,14 +45,14 @@ export default function Cusview() {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              backgroundColor: 'rgba(255, 255, 255, 0.9)', // พื้นหลังโปร่งใส
-              padding: '60px', // เพิ่ม padding
+              backgroundColor: 'rgba(255, 255, 255, 0.9)',
+              padding: '60px', 
               borderRadius: '15px',
               boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)',
-              minHeight: '300px', // ปรับขนาดความสูง
+              minHeight: '300px', 
             }}
           >
-            <Typography component="h1" variant="h2" sx={{ // ทำให้ขนาดตัวอักษรใหญ่ขึ้น
+            <Typography component="h1" variant="h2" sx={{ 
               backgroundColor: '#b3b3ff',
               padding: '10px 30px',
               borderRadius: '15px',

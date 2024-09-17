@@ -7,19 +7,19 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
-import BackgroundImage from './assets/BG.png'; // Import the background image
+import BackgroundImage from './assets/BG.png'; 
 
 const defaultTheme = createTheme();
 
 export default function Choice() {
-  const navigate = useNavigate(); // Use navigate to route to different pages
+  const navigate = useNavigate(); 
 
   const handleUserClick = () => {
-    navigate('/signinuser'); // Navigate to the user sign-in page
+    navigate('/signinuser'); 
   };
 
   const handleAdminClick = () => {
-    navigate('/signinadmin'); // Navigate to the admin sign-in page
+    navigate('/signinadmin'); 
   };
 
   return (
@@ -44,7 +44,7 @@ export default function Choice() {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              backgroundColor: 'rgba(255, 255, 255, 0.9)', // Transparent background
+              backgroundColor: 'rgba(255, 255, 255, 0.9)',
               padding: '40px',
               borderRadius: '15px',
               boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)',

@@ -12,7 +12,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
-import BackgroundImage from './assets/BG.png'; // นำเข้าภาพพื้นหลัง
+import BackgroundImage from './assets/BG.png'; 
 
 function Copyright(props) {
   return (
@@ -32,7 +32,7 @@ const defaultTheme = createTheme();
 export default function ForgotPass() {
   const [email, setEmail] = useState("");
   const [verifyPin, setVerifyPin] = useState("");
-  const navigate = useNavigate(); // ใช้ useNavigate สำหรับนำทาง
+  const navigate = useNavigate(); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -48,9 +48,8 @@ export default function ForgotPass() {
       console.log(result);
       alert(result['message']);
 
-      // คุณสามารถเพิ่มการนำทางไปยังหน้าอื่นหลังจากส่งคำขอสำเร็จได้ที่นี่
+      
       if (result['status'] === true) {
-        // ทำสิ่งที่คุณต้องการหลังจากรีเซ็ตรหัสผ่านสำเร็จ
       }
 
     } catch (err) {
@@ -63,7 +62,7 @@ export default function ForgotPass() {
       <Box
         sx={{
           minHeight: '100vh',
-          backgroundImage: `url(${BackgroundImage})`, // ใช้ภาพพื้นหลัง
+          backgroundImage: `url(${BackgroundImage})`, 
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           display: 'flex',
@@ -80,7 +79,7 @@ export default function ForgotPass() {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              backgroundColor: 'rgba(255, 255, 255, 0.9)', // พื้นหลังโปร่งใส
+              backgroundColor: 'rgba(255, 255, 255, 0.9)',
               padding: '40px',
               borderRadius: '15px',
               boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)',

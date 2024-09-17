@@ -11,8 +11,8 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import React, { useState } from "react";
 import axios from "axios";
-import { useNavigate } from 'react-router-dom'; // นำเข้า useNavigate
-import BackgroundImage from './assets/BG.png'; // นำเข้าภาพพื้นหลัง
+import { useNavigate } from 'react-router-dom';
+import BackgroundImage from './assets/BG.png'; 
 
 function Copyright(props) {
   return (
@@ -32,7 +32,7 @@ const defaultTheme = createTheme();
 export default function SignInAdmin() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate(); // ใช้ useNavigate สำหรับนำทาง
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -51,7 +51,7 @@ export default function SignInAdmin() {
 
       if (result['status'] === true) {
         localStorage.setItem('token', result['token']);
-        navigate('/dashboard');
+        navigate('/mainadmin');
       }
 
     } catch (err) {
@@ -81,7 +81,7 @@ export default function SignInAdmin() {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              backgroundColor: 'rgba(255, 255, 255, 0.9)', // พื้นหลังโปร่งใส
+              backgroundColor: 'rgba(255, 255, 255, 0.9)',
               padding: '40px',
               borderRadius: '15px',
               boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)',
