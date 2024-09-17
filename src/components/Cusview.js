@@ -12,7 +12,7 @@ function Copyright(props) {
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        Shopdee
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -22,7 +22,7 @@ function Copyright(props) {
 
 const defaultTheme = createTheme();
 
-export default function WelcomeCustomer() {
+export default function Cusview() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <Box
@@ -37,7 +37,7 @@ export default function WelcomeCustomer() {
           padding: 2,
         }}
       >
-        <Container component="main" maxWidth="sm">
+        <Container component="main" maxWidth="md"> {/* ปรับขนาดกรอบให้ใหญ่ขึ้น */}
           <CssBaseline />
           <Box
             sx={{
@@ -46,13 +46,21 @@ export default function WelcomeCustomer() {
               flexDirection: 'column',
               alignItems: 'center',
               backgroundColor: 'rgba(255, 255, 255, 0.9)', // พื้นหลังโปร่งใส
-              padding: '40px',
+              padding: '60px', // เพิ่ม padding
               borderRadius: '15px',
               boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)',
-              minHeight: '200px',
+              minHeight: '300px', // ปรับขนาดความสูง
             }}
           >
-            <Typography component="h1" variant="h4" sx={{ backgroundColor: '#b3b3ff', padding: '10px 30px', borderRadius: '15px 15px 15px 15px', color: 'white', width: '100%', textAlign: 'center', mb: 4 }}>
+            <Typography component="h1" variant="h2" sx={{ // ทำให้ขนาดตัวอักษรใหญ่ขึ้น
+              backgroundColor: '#b3b3ff',
+              padding: '10px 30px',
+              borderRadius: '15px',
+              color: 'white',
+              width: '100%',
+              textAlign: 'center',
+              mb: 4,
+            }}>
               Welcome
             </Typography>
             <Typography component="p" variant="h6">
